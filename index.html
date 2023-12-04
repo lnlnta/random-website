@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+
+</head>
+
+<body>
+
+    <h1>Redirecting into a random website...</h1>
+    <p id="numberResult"></p>
+
+</body>
+
+<script>
+
+    var i = 0;
+    var text = document.getElementById("numberResult")
+
+    /////////////////////////////////////////////
+
+    function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+    }
+
+    /////////////////////////////////////////////
+
+    //Generate the number
+    i = getRandomInt(8)
+
+    console.log(i)
+
+    switch (i){
+    
+        case 0:
+            window.location.replace("about:blank");
+            break
+
+        case 1:
+            window.location.replace("https://lennydev.vercel.app");
+            break
+
+        case 2:
+            window.location.replace("https://anarchat.vercel.app");
+            break
+        case 3:
+            window.location.replace("https://helpingani.neocities.org");
+            break
+
+        case 4:
+            window.location.replace("https://districts.neocities.org/");
+            break
+
+        case 5:
+            window.location.replace("https://googol.neocities.org/android/");
+            break
+
+        case 6:
+            window.location.replace("https://googol.neocities.org/");
+            break
+
+        case 7:
+            window.location.replace("https://devils.neocities.org/");
+            break
+
+    }
+
+</script>
+
+</html>
